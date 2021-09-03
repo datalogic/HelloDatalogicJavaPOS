@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+                             "jpos/res/jcl.dtd">
+<JposEntries>
+    <JposEntry logicalName="DatalogicJavaPOSDevice">
+
+    Put a properly configured DatalogicJavaPOSDevice JposEntry
+    into the working jpos.xml. This is needed because the
+    logicalName DatalogicJavaPOSDevice is hardcoded into
+    HelloDatalogicJavaPOS.jar.
+
+    Replace this comment text with contents for your scanner device 
+    and interface.
+
+    Example contents are below.
+
+    Put this newly updated DatalogicJavaPOSDevice JposEntry into 
+    the working jpos.xml of
+        C:\Program Files\Datalogic\JavaPOS
+    or
+        /usr/local/Datalogic/JavaPOS
+
+    Test with JavaPOSTest by doing open, claim and beep in JavaPOSTest.
+    Next run your build of HelloDatalogicJavaPOS.jar with
+        HelloDatalogicJavaPOS.cmd
+    or
+        HelloDatalogicJavaPOS.sh
+
+    </JposEntry>
+    <JposEntry logicalName="DLS-GFS4590-RS232-COM16-115200-baud">
+        <creation factoryClass="com.dls.jpos.service.DLSScannerInstanceFactory" serviceClass="com.dls.jpos.service.DLSScannerService"/>
+        <vendor name="DLA" url="http://www.adc.datalogic.com"/>
+        <jpos category="Scanner" version="1.13"/>
+        <product description="ScannerService" name="ScannerService" url="http://www.adc.datalogic.com"/>
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="deviceClass" type="String" value="RS232HHScanner"/>
+        <prop name="portName" type="String" value="COM16"/>
+        <prop name="baudRate" type="String" value="115200"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="flowControl" type="String" value="None"/>
+        <prop name="beepDuration" type="String" value="1"/>
+        <prop name="beepFrequency" type="String" value="2"/>
+        <prop name="beepVolume" type="String" value="2"/>
+        <prop name="canAcceptStatisticsCmd" type="String" value="True"/>
+        <prop name="canCompareFirmwareVersion" type="String" value="True"/>
+        <prop name="canNotifyPowerChange" type="String" value="True"/>
+        <prop name="canUpdateFirmware" type="String" value="True"/>
+        <prop name="deviceDescription" type="String" value="Gryphon 4500 Family Scanner COM16"/>
+        <prop name="deviceName" type="String" value="DLS Gryphon GD4590 Scanner"/>
+        <prop name="doubleReadTimeout" type="String" value="2"/>
+        <prop name="enable2DigitSups" type="String" value="False"/>
+        <prop name="enable4DigitPriceCheckDigit" type="String" value="False"/>
+        <prop name="enable5DigitPriceCheckDigit" type="String" value="False"/>
+        <prop name="enable5DigitSups" type="String" value="False"/>
+        <prop name="enableBarCodeProgramming" type="String" value="True"/>
+        <prop name="enableCodabar" type="String" value="True"/>
+        <prop name="enableCode128" type="String" value="True"/>
+        <prop name="enableCode128Sups" type="String" value="False"/>
+        <prop name="enableCode39" type="String" value="True"/>
+        <prop name="enableCode39CheckDigit" type="String" value="False"/>
+        <prop name="enableCode93" type="String" value="True"/>
+        <prop name="enableEANJAN2LabelDecode" type="String" value="False"/>
+        <prop name="enableGoodReadBeep" type="String" value="True"/>
+        <prop name="enableInterleaved" type="String" value="True"/>
+        <prop name="enableITFCheckDigit" type="String" value="False"/>
+        <prop name="enableLaserOnOffSwitch" type="String" value="True"/>
+        <prop name="enableUCCEAN128" type="String" value="True"/>
+        <prop name="enableUPCACheckDigit" type="String" value="False"/>
+        <prop name="enableUPCAtoEAN13Expansion" type="String" value="False"/>
+        <prop name="enableUPCD1D5" type="String" value="True"/>
+        <prop name="enableUPCEAN" type="String" value="True"/>
+        <prop name="enableUPCECheckDigit" type="String" value="False"/>
+        <prop name="enableUPCEtoEAN13Expansion" type="String" value="False"/>
+        <prop name="enableUPCEtoUPCAExpansion" type="String" value="False"/>
+        <prop name="enableVolumeSwitch" type="String" value="True"/>
+        <prop name="fullDisable" type="String" value="False"/>
+        <prop name="itfLength1" type="String" value="0"/>
+        <prop name="itfLength2" type="String" value="0"/>
+        <prop name="itfRange" type="String" value="0"/>
+        <prop name="laserTimeout" type="String" value="1"/>
+        <prop name="ledGoodReadDuration" type="String" value="1"/>
+        <prop name="MBeansEnabled" type="String" value="True"/>
+        <prop name="motorTimeout" type="String" value="1"/>
+        <prop name="productId" type="String" value="122f"/>
+        <prop name="scanControl" type="String" value="False"/>
+        <prop name="storeLabelSecurityLevel" type="String" value="0"/>
+        <prop name="twoItfs" type="String" value="0"/>
+        <prop name="usage" type="String" value="4b00"/>
+        <prop name="vendorId" type="String" value="05f9"/>
+        <prop name="WMIEnabled" type="String" value="True"/>
+    </JposEntry>
+    <JposEntry logicalName="Gryphon-4500-RS232-ttyUSB0-115200-baud">
+        <creation factoryClass="com.dls.jpos.service.DLSScannerInstanceFactory" serviceClass="com.dls.jpos.service.DLSScannerService"/>
+        <vendor name="DLA" url="http://www.adc.datalogic.com"/>
+        <jpos category="Scanner" version="1.13"/>
+        <product description="ScannerService" name="ScannerService" url="http://www.adc.datalogic.com"/>
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="deviceClass" type="String" value="RS232HHScanner"/>
+        <prop name="portName" type="String" value="/dev/ttyUSB0"/>
+        <prop name="baudRate" type="String" value="115200"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="flowControl" type="String" value="None"/>
+        <prop name="beepDuration" type="String" value="1"/>
+        <prop name="beepFrequency" type="String" value="2"/>
+        <prop name="beepVolume" type="String" value="2"/>
+        <prop name="canAcceptStatisticsCmd" type="String" value="True"/>
+        <prop name="canCompareFirmwareVersion" type="String" value="True"/>
+        <prop name="canNotifyPowerChange" type="String" value="True"/>
+        <prop name="canUpdateFirmware" type="String" value="True"/>
+        <prop name="deviceDescription" type="String" value="Gryphon 4500 Family Scanner ttyUSB0"/>
+        <prop name="deviceName" type="String" value="DLS Gryphon GD4590 Scanner"/>
+        <prop name="doubleReadTimeout" type="String" value="2"/>
+        <prop name="enable2DigitSups" type="String" value="False"/>
+        <prop name="enable4DigitPriceCheckDigit" type="String" value="False"/>
+        <prop name="enable5DigitPriceCheckDigit" type="String" value="False"/>
+        <prop name="enable5DigitSups" type="String" value="False"/>
+        <prop name="enableBarCodeProgramming" type="String" value="True"/>
+        <prop name="enableCodabar" type="String" value="True"/>
+        <prop name="enableCode128" type="String" value="True"/>
+        <prop name="enableCode128Sups" type="String" value="False"/>
+        <prop name="enableCode39" type="String" value="True"/>
+        <prop name="enableCode39CheckDigit" type="String" value="False"/>
+        <prop name="enableCode93" type="String" value="True"/>
+        <prop name="enableEANJAN2LabelDecode" type="String" value="False"/>
+        <prop name="enableGoodReadBeep" type="String" value="True"/>
+        <prop name="enableInterleaved" type="String" value="True"/>
+        <prop name="enableITFCheckDigit" type="String" value="False"/>
+        <prop name="enableLaserOnOffSwitch" type="String" value="True"/>
+        <prop name="enableUCCEAN128" type="String" value="True"/>
+        <prop name="enableUPCACheckDigit" type="String" value="False"/>
+        <prop name="enableUPCAtoEAN13Expansion" type="String" value="False"/>
+        <prop name="enableUPCD1D5" type="String" value="True"/>
+        <prop name="enableUPCEAN" type="String" value="True"/>
+        <prop name="enableUPCECheckDigit" type="String" value="False"/>
+        <prop name="enableUPCEtoEAN13Expansion" type="String" value="False"/>
+        <prop name="enableUPCEtoUPCAExpansion" type="String" value="False"/>
+        <prop name="enableVolumeSwitch" type="String" value="True"/>
+        <prop name="fullDisable" type="String" value="False"/>
+        <prop name="itfLength1" type="String" value="0"/>
+        <prop name="itfLength2" type="String" value="0"/>
+        <prop name="itfRange" type="String" value="0"/>
+        <prop name="laserTimeout" type="String" value="1"/>
+        <prop name="ledGoodReadDuration" type="String" value="1"/>
+        <prop name="MBeansEnabled" type="String" value="True"/>
+        <prop name="motorTimeout" type="String" value="1"/>
+        <prop name="productId" type="String" value="122f"/>
+        <prop name="scanControl" type="String" value="False"/>
+        <prop name="storeLabelSecurityLevel" type="String" value="0"/>
+        <prop name="twoItfs" type="String" value="0"/>
+        <prop name="usage" type="String" value="4b00"/>
+        <prop name="vendorId" type="String" value="05f9"/>
+    </JposEntry>
+    <JposEntry logicalName="DLS-GFS4590-USB-OEM">
+        <creation factoryClass="com.dls.jpos.service.DLSScannerInstanceFactory" serviceClass="com.dls.jpos.service.DLSScannerService"/>
+        <vendor name="DLA" url="http://www.adc.datalogic.com"/>
+        <jpos category="Scanner" version="1.13"/>
+        <product description="ScannerService" name="ScannerService" url="http://www.adc.datalogic.com"/>
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="deviceClass" type="String" value="USBHHScanner"/>
+        <prop name="deviceDescription" type="String" value="Gryphon 4500 Family Scanner USB-OEM"/>
+        <prop name="deviceName" type="String" value="DLS Gryphon GD4590 Scanner"/>
+        <prop name="productId" type="String" value="122f"/>
+        <prop name="usage" type="String" value="4b00"/>
+        <prop name="vendorId" type="String" value="05f9"/>
+    </JposEntry>
+</JposEntries>

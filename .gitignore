@@ -1,0 +1,5 @@
+/dist/*
+/nbproject/private/*
+/build/*
+*~
+**/stash/
