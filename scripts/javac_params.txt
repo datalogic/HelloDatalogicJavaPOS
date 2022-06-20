@@ -1,0 +1,1 @@
+-cp "C:/Program Files/Datalogic/JavaPOS/JavaPOS.jar;C:/Program Files/Datalogic/JavaPOS/SupportJars/jpos114.jar" hellodatalogicjavapos\HelloDatalogicJavaPOS.java

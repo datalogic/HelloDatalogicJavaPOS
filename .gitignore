@@ -1,5 +1,7 @@
 /dist/*
+/dist_via_jdk/*
 /nbproject/private/*
 /build/*
+/build_via_jdk/*
 *~
 **/stash/

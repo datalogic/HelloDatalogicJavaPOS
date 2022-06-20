@@ -1,0 +1,1 @@
+-cp /usr/local/Datalogic/JavaPOS/JavaPOS.jar:/usr/local/Datalogic/JavaPOS/SupportJars/jpos114.jar hellodatalogicjavapos/HelloDatalogicJavaPOS.java
